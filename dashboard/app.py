@@ -7,7 +7,7 @@ st.set_page_config(page_title="Olist Retention Analysis", layout="wide")
 
 @st.cache_data
 def load_data():
-    delivered = pd.read_parquet('/data/delivered_orders.parquet')
+    delivered = pd.read_parquet('data/delivered_orders.parquet')
     return delivered
 
 delivered = load_data()
