@@ -51,10 +51,32 @@ sellers, products, product_category_translation, geolocation.
 - `dashboard/` — interactive Streamlit app
 - `notebooks/` — exploratory notebooks
 
-## Key findings so far
-- Repeat purchase rate: **3.12%** — well below typical e-commerce benchmarks
-- Late delivery strongly hurts review scores (4.29★ on-time vs 2.27★ late,
-  p < 0.001, large effect size)
-- But review score does NOT significantly predict repeat purchase (p = 0.90)
-- What does predict repeat purchase: raw delivery delay length (each extra
-  day costs ~0.9% in odds) and order value/type
+## Key findings
+- **Repeat purchase rate: 3.12%** — well below typical e-commerce benchmarks
+  (20-40%+), the core problem this analysis investigates
+- **Late delivery strongly hurts satisfaction**: review scores drop from
+  4.29★ (on-time) to 2.27★ (late), p < 0.001, large effect size (0.64)
+- **But review score does NOT predict repeat purchase** (p = 0.899) — the
+  counter-intuitive twist this project is built around
+- **Delivery delay itself does predict repeat purchase** (p < 0.001): each
+  extra day of delay costs ~0.9% in odds, compounding to ~24% lower odds
+  for a 30-day-later delivery
+- **Product category explains very little of the low repeat rate**
+  (0.80%–9.23% range across ~30 categories, tightly clustered) — this is
+  not a "wrong product mix" problem, it's broad-based
+- **Modeled impact**: a realistic 5-day delivery improvement projects to
+  ~R$21,700 incremental revenue on this cohort — a real, defensible signal,
+  though modest relative to the scale of the retention gap
+
+## Recommendation
+Invest in delivery reliability over review-score optimization or
+category-specific retention campaigns — the data shows delivery delay
+(not customer sentiment or product type) is the strongest available lever
+on repeat purchase.
+
+## Project structure
+- `src/` — data cleaning and preparation scripts
+- `notebooks/` — exploratory analysis and statistical testing
+- `reports/` — phase-by-phase written findings (data audit, EDA & stats,
+  segmentation, synthesis & recommendation)
+- `dashboard/` — interactive Streamlit app (`streamlit run dashboard/app.py`)
