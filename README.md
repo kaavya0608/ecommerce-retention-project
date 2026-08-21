@@ -1,5 +1,7 @@
 # Fix the Leak: Retention & Logistics Analysis (Olist E-Commerce)
 
+**[Live Dashboard](https://ecommerce-retention-project-rgct3fhhajjk4uqxo7eddg.streamlit.app/)** · [GitHub Repo](https://github.com/kaavya0608/ecommerce-retention-project)
+
 ## Business Question
 Olist's repeat purchase rate is low. Where should the company invest its next
 marketing/ops dollar to improve customer lifetime value — logistics
