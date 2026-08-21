@@ -1,6 +1,7 @@
 venv/
 data/*.csv
 data/*.parquet
+!data/delivered_orders.parquet
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
